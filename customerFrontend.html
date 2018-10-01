@@ -1,0 +1,40 @@
+<html>
+ <head>
+        <script type="text/javascript" src="formChecker.js">
+        </script>
+        <h1>Welcome to the store!</h1>
+        <link href="myStyle.css" rel="stylesheet" type="text/css"/>
+        <title>store </title>
+ </head>
+ <body>
+        <form action="customerBackend.php" method="post" onsubmit=return "formChecker()">
+        <p>Enter Username (ex: name@gmail.com): </p>
+        <input type="text" name="username" id="un"><br>
+        <p>Enter Password: </p>
+        <input type="password" name="pw" id="pw"><br>
+        <p>We have this three product for today:</p>
+        <p>Knitted Blanket: $200.00</p>
+        Please Enter Quantity:
+        <input type="text" name="BQ" id="blanket"><br>
+        <img src="https://irepo.primecp.com/2016/05/283337/Checkered-Knit-Blanket_Large500_ID-1685465.jpg"
+            alt="Blanket"><br>
+        <p> Knitted Dress: $245.00</p>
+        Please Enter Quantity:
+        <input type="text" name="DQ" id="dress"><br>
+        <img src="https://i.etsystatic.com/16065947/r/il/0d21b2/1388593332/il_570xN.1388593332_gmb4.jpg"
+             alt="dress"><br>
+        <p>Knitted Scarf and Hat set: $75.00</p>
+        Please Enter Quantity:
+        <input type="text" name="SQ" id="set"><br>
+        <img src="https://i.pinimg.com/236x/5b/4a/0d/5b4a0dd0432a0c8ff7f465a7c5b69f62--hooked-on-crochet-crochet-.jpg"
+             alt ="scarf"><br>
+
+        <p> We offer these shipping choices, please select one:</p><br>
+        <input type="radio" name="Shipping" value="free" id="free">Free, arriving in 7 business days<br>
+        <input type="radio" name="Shipping" value="3 days" id="5"> $5.00, arriving in 3 business days <br>
+        <input type="radio" name="Shipping" value="overnight" id="50"> $50.00, arriving over night<br>
+        <button type="submit"> Submit</button>
+        <input type="reset" value="Reset">
+      </form>
+    </body>
+</html>
